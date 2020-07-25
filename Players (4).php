@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incapacitation</title>
-    <link rel="stylesheet" href="/foundation.css">
-    <link rel="stylesheet" href="/allpages.css">
+    <title>Players</title>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="allpages.css">
     <link rel="stylesheet" href="https://use.typekit.net/agr6hpy.css">
   </head>
   <body>
@@ -15,7 +15,7 @@
 <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
   <!-- NOTE: vertical menu -->
   <ul class="vertical menu" data-accordion-menu>
-    <li><a href="/Players.php">Players</a>
+    <li><a href="Players.php">Players</a>
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="CharacterCreation.php">Character Creation</a></li>
         <li><a href="Feats.php">Feats</a></li>
@@ -37,7 +37,6 @@
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="General.php">General</a></li>
         <li><a href="Combat.php">Combat</a></li>
-        <li><a href="Incapacitation.php">Incapacitation</a></li>
         <li><a href="Skills.php">Skills</a></li>
         <li><a href="Spells.php">Spells</a></li>
         <li><a href="Objects.php">Objects</a></li>
@@ -57,7 +56,7 @@
   </ul>
 </div>
 
-<!-- NOTE: bar content -->
+<!-- NOTE: TOP BAR -->
 
 <div class="off-canvas-content" data-off-canvas-content>
   <div class="nav-bar">
@@ -69,8 +68,8 @@
 
       <div class="nav-bar-right">
         <ul class="menu">
-        <li class="hide-for-small-only"><a href="Players.php">Players</a></li>
           <li class="hide-for-small-only"><a href="Gamemasters.php">Gamemasters</a></li>
+          <li class="hide-for-small-only"><a href="Rules.php">Rules</a></li>
 <!-- NOTE: search -->
 
         <ul class="menu search">
@@ -93,37 +92,29 @@
   </div>
  </div>
 
- <!-- NOTE: bar content -->
+ <!-- NOTE: END TOP BAR -->
 
 <!-- NOTE: HEADER -->
   <div class="holy-grail-grid">
 
-      <div class="holy-grail-left">
-        <h3>Rules</h3>
-        <ul>
-          <li><a href="General.php">General</a></li>
-          <li><a href="Combat.php">Combat</a></li>
-          <li><a href="Skills.php">Skills</a></li>
-          <li><a href="Spells.php">Spells</a></li>
-          <li><a href="Objects.php">Objects</a></li>
-          <li><a href="Vehicles.php">Vehicles</a></li>
-        </ul>
-      </div>
-
-      <div class="holy-grail-middle">
-        <h3>Incapacitation</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+      <div class="holy-grail-middle" style="width: 70vw; margin-left: 10vw">
+        <h3>Players</h3>
+          <p>This section contains character creation resources for players.</p>
+          <ul>
+            <li><a href="CharacterCreation.php">Character Creation</a></li>
+            <li><a href="Feats.php">Feats</a></li>
+            <li><a href="SkillFeats.php">Skill Feats</a></li>
+            <li><a href="SpellEffects.php">Spell Effects</a></li>
+            <li><a href="Gear.php">Gear</a></li>
+          </ul>
       </div>
   </div>
 
-<!-- NOTE: FOOTER -->
-<footer></footer>
-    <script src="jquery.js"></script>
-    <script src="what-input.js"></script>
-    <script src="foundation.js"></script>
-    <script src="app.js"></script>
+  <!-- NOTE: FOOTER -->
+      <script src="jquery.js"></script>
+      <script src="what-input.js"></script>
+      <script src="foundation.js"></script>
+      <script src="app.js"></script>
+
   </body>
 </html>

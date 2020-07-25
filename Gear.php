@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gear</title>
-    <link rel="stylesheet" href="/foundation.css">
-    <link rel="stylesheet" href="/allpages.css">
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="allpages.css">
     <link rel="stylesheet" href="https://use.typekit.net/agr6hpy.css">
   </head>
   <body>
@@ -15,7 +15,7 @@
 <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
   <!-- NOTE: vertical menu -->
   <ul class="vertical menu" data-accordion-menu>
-    <li><a href="/Players.php">Players</a>
+    <li><a href="Players.php">Players</a>
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="CharacterCreation.php">Character Creation</a></li>
         <li><a href="Feats.php">Feats</a></li>
@@ -37,7 +37,6 @@
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="General.php">General</a></li>
         <li><a href="Combat.php">Combat</a></li>
-        <li><a href="Incapacitation.php">Incapacitation</a></li>
         <li><a href="Skills.php">Skills</a></li>
         <li><a href="Spells.php">Spells</a></li>
         <li><a href="Objects.php">Objects</a></li>
@@ -1054,12 +1053,13 @@
           function keywords($str, $KeywordName, $KeywordCode, $KeywordLink){
             $count=0;
             foreach( $KeywordName as $r ) {
-              $str=str_ireplace($r, $KeywordCode[$count], $str);
+              $str=preg_replace('/\b'.$r.'\b/i', $KeywordCode[$count], $str);
               $count=$count+1;
             }
             $count=0;
             foreach( $KeywordCode as $r ) {
-              $str=str_ireplace($r, $KeywordLink[$count], $str);
+              $r='/'.$r.'/';
+              $str=preg_replace($r, $KeywordLink[$count], $str);
               $count=$count+1;
             }
             return $str;
@@ -1096,6 +1096,7 @@
               $Effect[$r[1]]=$r[10];
               $Level[$r[1]]=$r[11];
               $Spell[$r[1]]=$r[12];
+              $OtherQualities[$r[1]]=$r[13];
               $c = $c+1;
             }
           }
@@ -1104,7 +1105,7 @@
           }
 
           //if directed to a specific feat, show that feats info
-          if (isset($_SERVER['QUERY_STRING'])) {
+          if ($_GET) {
             //  $Feat=urldecode($_SERVER['QUERY_STRING']);
             //  echo $Feat;
             //  echo '<p>'.$FeatCritical[$Feat].$FeatStance[$Feat].'</p>';
@@ -1123,7 +1124,7 @@
             echo keywords($Effect['Page Description 3'], $KeywordName, $KeywordCode, $KeywordLink);
           //weapons
             echo '</p><p>';
-            echo 'Weapons';
+            echo '<b>Weapons</b>';
             echo '</p><p>';
             echo keywords($Effect['Weapons Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1133,9 +1134,11 @@
                 echo '<tr>';
                 echo '<td>'.$value.'</td>';
                 echo '<td>'.$Type[$value].'</td>';
+                echo '<td>'.$Qualities[$value].'</td>';
+                echo '<td>'.$Damage[$value].'</td>';
                 echo '<td>'.$Hardness[$value].'</td>';
                 echo '<td>'.$HP[$value].'</td>';
-                echo '<td>'.$Qualities[$value].'</td>';
+                echo '<td>'.$OtherQualities[$value].'</td>';
                 echo '<td>'.$Cost[$value].'</td>';
                 echo '</tr>';
               }
@@ -1143,7 +1146,7 @@
             echo '</table>';
           //armor
             echo '</p><p>';
-            echo 'Armor';
+            echo '<b>Armor</b>';
             echo '</p><p>';
             echo keywords($Effect['Armor Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1153,9 +1156,10 @@
                 echo '<tr>';
                 echo '<td>'.$value.'</td>';
                 echo '<td>'.$Type[$value].'</td>';
+                echo '<td>'.$Qualities[$value].'</td>';
                 echo '<td>'.$Hardness[$value].'</td>';
                 echo '<td>'.$HP[$value].'</td>';
-                echo '<td>'.$Qualities[$value].'</td>';
+                echo '<td>'.$OtherQualities[$value].'</td>';
                 echo '<td>'.$Cost[$value].'</td>';
                 echo '</tr>';
               }
@@ -1163,7 +1167,7 @@
             echo '</table>';
           //Gear
             echo '</p><p>';
-            echo 'Gear';
+            echo '<b>Gear</b>';
             echo '</p><p>';
             echo keywords($Effect['Gear Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1181,7 +1185,7 @@
             echo '</table>';
           //Bombs
             echo '</p><p>';
-            echo 'Bombs';
+            echo '<b>Bombs</b>';
             echo '</p><p>';
             echo keywords($Effect['Bombs Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1199,7 +1203,7 @@
             echo '</table>';
           //Poisons
             echo '</p><p>';
-            echo 'Poisons';
+            echo '<b>Poisons</b>';
             echo '</p><p>';
             echo keywords($Effect['Poisons Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1216,7 +1220,7 @@
             echo '</table>';
           //Traps
             echo '</p><p>';
-            echo 'Traps';
+            echo '<b>Traps</b>';
             echo '</p><p>';
             echo keywords($Effect['Traps Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1234,7 +1238,7 @@
             echo '</table>';
           //Potions
             echo '</p><p>';
-            echo 'Potions';
+            echo '<b>Potions</b>';
             echo '</p><p>';
             echo keywords($Effect['Potions Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';
@@ -1252,7 +1256,7 @@
             echo '</table>';
           //Enchantments
             echo '</p><p>';
-            echo 'Enchantments';
+            echo '<b>Enchantments</b>';
             echo '</p><p>';
             echo keywords($Effect['Enchantments Description'], $KeywordName, $KeywordCode, $KeywordLink);
             echo '</p>';

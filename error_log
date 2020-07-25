@@ -1,0 +1,66 @@
+[05-Jul-2020 16:21:21 UTC] PHP Warning:  strpos(): Empty needle in /home3/fragmer3/public_html/wp-includes/functions.php on line 4360
+[05-Jul-2020 16:21:21 UTC] PHP Warning:  strpos(): Empty needle in /home3/fragmer3/public_html/wp-includes/functions.php on line 4360
+[05-Jul-2020 16:21:22 UTC] mojo_plugin_activated
+[05-Jul-2020 16:25:34 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:25:49 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:34:34 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:34:34 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:34:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esch_html_e() in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php:371
+Stack trace:
+#0 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(158): require()
+#1 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(101): mm_cs_content()
+#2 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(287): mm_cs_load('')
+#3 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home3/fragmer3/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /home3/fragmer3/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#6 /home3/fragmer3/public_html/wp-blog-header.php(19): require_once('/home3/fragmer3...')
+#7 /home3/fragmer3/public_html/index.php(17): require('/home3/fragmer3...')
+#8 {main}
+  thrown in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php on line 371
+[05-Jul-2020 16:37:56 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:37:56 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:37:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esch_html_e() in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php:371
+Stack trace:
+#0 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(158): require()
+#1 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(101): mm_cs_content()
+#2 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(287): mm_cs_load('')
+#3 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home3/fragmer3/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /home3/fragmer3/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#6 /home3/fragmer3/public_html/wp-blog-header.php(19): require_once('/home3/fragmer3...')
+#7 /home3/fragmer3/public_html/index.php(17): require('/home3/fragmer3...')
+#8 {main}
+  thrown in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php on line 371
+[05-Jul-2020 16:39:30 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:39:40 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:39:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esch_html_e() in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php:371
+Stack trace:
+#0 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(158): require()
+#1 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(101): mm_cs_content()
+#2 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(287): mm_cs_load('')
+#3 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home3/fragmer3/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /home3/fragmer3/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#6 /home3/fragmer3/public_html/wp-blog-header.php(19): require_once('/home3/fragmer3...')
+#7 /home3/fragmer3/public_html/index.php(17): require('/home3/fragmer3...')
+#8 {main}
+  thrown in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php on line 371
+[05-Jul-2020 16:39:56 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:39:56 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:39:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esch_html_e() in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php:371
+Stack trace:
+#0 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(158): require()
+#1 /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/inc/coming-soon.php(101): mm_cs_content()
+#2 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(287): mm_cs_load('')
+#3 /home3/fragmer3/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home3/fragmer3/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /home3/fragmer3/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#6 /home3/fragmer3/public_html/wp-blog-header.php(19): require_once('/home3/fragmer3...')
+#7 /home3/fragmer3/public_html/index.php(17): require('/home3/fragmer3...')
+#8 {main}
+  thrown in /home3/fragmer3/public_html/wp-content/plugins/mojo-marketplace-wp-plugin/pages/coming-soon/bluehost.php on line 371
+[05-Jul-2020 16:55:36 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 16:56:33 UTC] WordPress database error Table 'fragmer3_WPBUC._BUC_wpforms_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `_BUC_wpforms_tasks_meta` made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Tasks\Tasks->init, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->__construct, WPForms\Tasks\Actions\EntryEmailsMetaCleanupTask->init, WPForms\Tasks\Task->register, WPForms\Tasks\Meta->add, WPForms_DB->add
+[05-Jul-2020 11:04:21 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home3/fragmer3/public_html/SpellEffects.php on line 1131
+[05-Jul-2020 11:12:53 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home3/fragmer3/public_html/SpellEffects.php on line 1131
+[05-Jul-2020 11:19:37 America/Boise] PHP Warning:  Invalid argument supplied for foreach() in /home3/fragmer3/public_html/SpellEffects.php on line 1131

@@ -31,7 +31,7 @@
       <img src="logo.png" alt="Fragments Seal" style="width: 300px;">
       <h1>Fragments of Power</h1>
       <a href="Players.php"><button class="button large">Players</button></a>
-      <a href="Gamemasters.php"><button class="button large">Gamemasters</button>
+      <a href="Gamemasters.php"><button class="button large">Gamemasters</button></a>
       <a href="Rules.php"><button class="button large">Rules</button></a>
     </div>
   </div>

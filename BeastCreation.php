@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beast Creation</title>
-    <link rel="stylesheet" href="/foundation.css">
-    <link rel="stylesheet" href="/allpages.css">
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="allpages.css">
     <link rel="stylesheet" href="https://use.typekit.net/agr6hpy.css">
   </head>
   <body>
@@ -15,7 +15,7 @@
 <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
   <!-- NOTE: vertical menu -->
   <ul class="vertical menu" data-accordion-menu>
-    <li><a href="/Players.php">Players</a>
+    <li><a href="Players.php">Players</a>
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="CharacterCreation.php">Character Creation</a></li>
         <li><a href="Feats.php">Feats</a></li>
@@ -37,7 +37,6 @@
       <ul class="menu vertical nested" style="font-weight: 300">
         <li><a href="General.php">General</a></li>
         <li><a href="Combat.php">Combat</a></li>
-        <li><a href="Incapacitation.php">Incapacitation</a></li>
         <li><a href="Skills.php">Skills</a></li>
         <li><a href="Spells.php">Spells</a></li>
         <li><a href="Objects.php">Objects</a></li>
