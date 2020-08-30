@@ -173,10 +173,25 @@
   width: 100%;
 }
 
-@media screen and (max-width: 30em) {
-  .animated-search-form {
-  width: 0rem;  
-  }
+@media screen and (max-width: 480px) {
+    input[type="search"]
+    {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    input[type="search"]
+    {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    input[type="search"]
+    {
+        width: 100px;
+    }
 }
 
 /* NOTE: end search bar */
@@ -187,8 +202,7 @@ body {
 
 ul {
   list-style-type: none;
-  font-family: helvetica;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 h3 {
@@ -197,6 +211,12 @@ h3 {
   font-size: 4vw;
   font-style: normal;
   color: black;
+}
+
+@media screen and (max-width: 680px) {
+    h3 {
+        font-size: 8vw;
+    }
 }
 
 p {
@@ -251,15 +271,17 @@ p {
     grid-column-end: 4;
     background-color: whitesmoke;
     font-weight: bold;
+    margin-top: -50px;
   }
 }
 
 @media screen and (min-width: 60em) {
   .holy-grail-left {
-    background-color: whitesmoke;
-    margin-left: 5%;
+    background-color: #dcdcdc;
+    margin-left: 0%;
     margin-right: 5%;
     font-weight: bold;
+    margin-top: -80px;
   }
 }
 
@@ -272,7 +294,7 @@ p {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
-    background-color: white;
+    background-color: whitesmoke;
   }
 }
 
@@ -313,18 +335,18 @@ body {
 }
 
 a:link {
-  color: #3c5178;
+  color: #346986;
 }
 
 a:hover {
-  color: #718ab8;
+  color: #192c51;
   text-decoration: underline;
   transition: 0.3s;
 
 }
 
 a:visited {
-  color: crimson;
+  color: purple;
 }
 
 .hide-for-small-only a:link {

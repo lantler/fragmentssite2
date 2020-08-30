@@ -27,7 +27,7 @@ html {
   }
 
   .nav-bar a {
-    color: #3c5178;
+    color: #346986;
     transition: color 0.2s ease-in;
     padding-top: 27px;
   }
@@ -149,7 +149,7 @@ html {
   .hamburger .line {
     width: 20px;
     height: 2px;
-    background-color: #3c5178;
+    background-color: #346986;
     display: block;
     margin: 3px auto;
     transition: all 0.3s ease-in-out;
@@ -230,5 +230,5 @@ h3 {
   font-weight: 500;
   font-style: normal;
   font-size: 50px;
-  color: #3c5178;
+  color: #346986;
 }

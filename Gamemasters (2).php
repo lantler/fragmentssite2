@@ -75,7 +75,7 @@
 
         <ul class="menu search">
           <li><input type="search" placeholder=""></li>
-          <li><button type="button" class="button" style="background-color: #3c5178;">Search</button></li>
+          <li><button type="button" class="button" style="background-color: #346986;">Search</button></li>
         </ul>
 <!-- NOTE: end search -->
           <li>

@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 /* NOTE: SEARCH */
 
 .searchbar {
@@ -17,18 +21,13 @@
 .expand-search {
   width: 80%;
   max-width: calc(80% - 3rem);
-  border: 1px solid	#3c5178;
+  border: 1px solid	#346986;
   padding: .5rem;
 }
 
 svg {
   width: 20px;
   height: 20px;
-}
-
-.button {
-  font-weight: lighter;
-  background-color: #3c5178;
 }
 
 /* NOTE: HERO */
@@ -114,4 +113,18 @@ body {
   background-image: url(../planet.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.button:hover {
+  background-color: white;
+  color: #346986;
+}
+
+@media screen and (max-width: 450px);  {
+   .button { display: none; }
+}
+
+.button {
+  font-weight: bold;
+  background-color: #346986;
 }
